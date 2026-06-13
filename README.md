@@ -53,8 +53,11 @@ docker compose up --build
 Open:
 
 - Frontend: http://localhost:3000
-- Backend API: http://localhost:8000
+- Backend API base URL: http://localhost:8000
 - API docs: http://localhost:8000/docs
+- Health check: http://localhost:8000/health
+
+Note: The backend base route `/` is not a homepage, so opening `http://localhost:8000` directly can show `404 Not Found`. Use `/docs` to view and test the API, or `/health` to confirm the backend is running.
 
 ## Environment Variables
 
@@ -105,3 +108,5 @@ docker push <dockerhub-user>/inventory-backend:latest
 - Live backend API URL: https://inventory-order-management-system-unfg.onrender.com
 - Backend API docs: https://inventory-order-management-system-unfg.onrender.com/docs
 - Backend health check: https://inventory-order-management-system-unfg.onrender.com/health
+
+Note: The live backend API base URL may show `404 Not Found` when opened directly because the API does not define a homepage route. The API is available through `/docs`, `/health`, `/products`, `/customers`, and `/orders`.
