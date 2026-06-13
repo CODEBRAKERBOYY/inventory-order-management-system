@@ -75,7 +75,14 @@ Frontend:
 
 ## Deployment Notes
 
-Suggested free deployment setup:
+This project is deployed with:
+
+- Backend API: Render
+- Frontend: Vercel
+- Database: Render PostgreSQL
+- Backend image registry: Docker Hub
+
+To deploy your own copy:
 
 1. Push this repository to GitHub.
 2. Deploy PostgreSQL and the FastAPI backend on Render, Railway, or Fly.io.
@@ -92,7 +99,9 @@ docker push <dockerhub-user>/inventory-backend:latest
 
 ## Submission Links
 
-- GitHub repository: add after publishing
-- Docker Hub backend image: add after pushing
-- Live frontend URL: add after deployment
-- Live backend API URL: add after deployment
+- GitHub repository: https://github.com/CODEBRAKERBOYY/inventory-order-management-system
+- Docker Hub backend image: https://hub.docker.com/r/codebrakerr/inventory-backend
+- Live frontend URL: https://inventory-order-management-system-puce.vercel.app
+- Live backend API URL: https://inventory-order-management-system-unfg.onrender.com
+- Backend API docs: https://inventory-order-management-system-unfg.onrender.com/docs
+- Backend health check: https://inventory-order-management-system-unfg.onrender.com/health
